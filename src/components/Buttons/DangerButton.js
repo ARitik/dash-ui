@@ -9,7 +9,9 @@ export default function DangerButton({ children }) {
 	const classes = useStyles();
 	return (
 		<Button className={classes.dangerButton}>
-			<Typography variant="body2">{children}</Typography>
+			<Typography variant="body2" className={classes.baseFont}>
+				{children}
+			</Typography>
 		</Button>
 	);
 }

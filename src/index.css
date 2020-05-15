@@ -1,7 +1,17 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
 :root {
     --bg: #FCFCFC;
     --bg-accent: #2C2C44;
     --primary: #A4ACFC;
     --danger: #FF8888;
     --disabled: #CFD1E6;
+    --nav-size: 60px;
+    --border-radius: 8px;
+    --border: 1px solid rgb(53, 53, 82);
+    --speed: 500ms;
+    --base-font: 'Poppins', sans-serif;
 }

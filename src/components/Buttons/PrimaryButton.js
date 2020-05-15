@@ -10,7 +10,9 @@ export default function PrimaryButton({ children }) {
 
 	return (
 		<Button className={classes.primaryButton}>
-			<Typography variant="body2">{children}</Typography>
+			<Typography variant="body2" className={classes.baseFont}>
+				{children}
+			</Typography>
 		</Button>
 	);
 }

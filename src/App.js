@@ -2,11 +2,13 @@ import React from 'react';
 import { Grid, Typography } from '@material-ui/core';
 import PrimaryButton from './components/Buttons/PrimaryButton';
 import DangerButton from './components/Buttons/DangerButton';
-
+import NavBar from './components/NavBar/NavBar';
 export default function App() {
 	return (
 		<Grid container direction="column">
-			<Grid item></Grid>
+			<Grid item>
+				<NavBar />
+			</Grid>
 			<Grid item container>
 				<Grid item xs={false} sm={2}></Grid>
 				<Grid item xs={12} sm={8}>
