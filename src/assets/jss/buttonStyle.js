@@ -1,5 +1,6 @@
 const buttonStyle = {
 	primaryButton: {
+		margin: '4px',
 		textTransform: 'none',
 		backgroundColor: 'var(--primary)',
 		minWidth: '150px',
@@ -13,6 +14,7 @@ const buttonStyle = {
 		},
 	},
 	dangerButton: {
+		margin: '4px',
 		textTransform: 'none',
 		backgroundColor: 'var(--danger)',
 		minWidth: '150px',

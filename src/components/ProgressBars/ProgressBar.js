@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
+import { Box } from '@material-ui/core';
+import { Text } from '../Typography/index';
 import '../../assets/css/ProgressBar.css';
 
-export default function ProgressBar({ done }) {
+export default function ProgressBar({ done, title }) {
 	const [style, setStyle] = useState({});
 
 	setTimeout(() => {
@@ -22,10 +24,11 @@ export default function ProgressBar({ done }) {
 	}, 200);
 
 	return (
-		<div className="progress">
-			<div className="progress-done" style={style}>
-				{done}%
+		<Box mt={2}>
+			<Text>{title}</Text>
+			<div className="progress">
+				<div className="progress-done" style={style}></div>
 			</div>
-		</div>
+		</Box>
 	);
 }

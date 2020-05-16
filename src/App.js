@@ -6,6 +6,11 @@ import NavBar from './components/NavBar/NavBar';
 import ProgressBar from './components/ProgressBars/ProgressBar';
 import Text from './components/Typography/Text';
 import Title from './components/Typography/Title';
+import HostelCard from './components/Cards/HostelCard';
+import RoomCard from './components/Cards/RoomCard';
+import RoomLayout from './layouts/RoomLayout';
+import ToEditCard from './components/Cards/ToEditCard';
+
 export default function App() {
 	return (
 		<Grid container direction="column">
@@ -21,6 +26,9 @@ export default function App() {
 					<ProgressBar done={90} />
 					<Text>This is some text</Text>
 					<Title>This is some title</Title>
+					<RoomCard />
+					<ToEditCard />
+					<HostelCard />
 				</Grid>
 				<Grid item xs={false} sm={2}></Grid>
 			</Grid>
