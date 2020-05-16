@@ -3,6 +3,7 @@ import { Grid, Typography } from '@material-ui/core';
 import PrimaryButton from './components/Buttons/PrimaryButton';
 import DangerButton from './components/Buttons/DangerButton';
 import NavBar from './components/NavBar/NavBar';
+import ProgressBar from './components/ProgressBars/ProgressBar';
 export default function App() {
 	return (
 		<Grid container direction="column">
@@ -14,6 +15,8 @@ export default function App() {
 				<Grid item xs={12} sm={8}>
 					<DangerButton>Deallocate</DangerButton>
 					<PrimaryButton>Allocate</PrimaryButton>
+					<ProgressBar done={50} />
+					<ProgressBar done={90} />
 				</Grid>
 				<Grid item xs={false} sm={2}></Grid>
 			</Grid>
