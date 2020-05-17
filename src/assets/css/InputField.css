@@ -18,6 +18,10 @@
     transform: translateY(-8px);
 }
 
+.input:focus::placeholder {
+    color: transparent;
+}
+
 .input-div {
     margin-top: 20px;
 }
