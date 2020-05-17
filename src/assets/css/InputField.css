@@ -1,0 +1,23 @@
+.input {
+    margin-top: 12px;
+    font-size: 1.08em;
+    font-weight: 600;
+    padding: 18px 26px;
+    width: 280px;
+    background-color: var(--bg);
+    color: var(--bg-accent);
+    border: none;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    transition: transform ease-in 0.3s;
+
+}
+
+.input:focus {
+    outline: none;
+    transform: translateY(-8px);
+}
+
+.input-div {
+    margin-top: 20px;
+}

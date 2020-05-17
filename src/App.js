@@ -10,6 +10,7 @@ import HostelCard from './components/Cards/HostelCard';
 import RoomCard from './components/Cards/RoomCard';
 import RoomLayout from './layouts/RoomLayout';
 import ToEditCard from './components/Cards/ToEditCard';
+import InputField from './components/Form/InputField';
 
 export default function App() {
 	return (
@@ -29,6 +30,7 @@ export default function App() {
 					<RoomCard />
 					<ToEditCard />
 					<HostelCard />
+					<InputField id="Testing" heading="Password" type="password" />
 				</Grid>
 				<Grid item xs={false} sm={2}></Grid>
 			</Grid>
