@@ -18,6 +18,10 @@
     transform: translateY(-8px);
 }
 
+.input::placeholder {
+    color: var(--disabled);
+}
+
 .input:focus::placeholder {
     color: transparent;
 }
