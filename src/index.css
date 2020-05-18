@@ -19,3 +19,8 @@ body {
     font-family: var(--base-font);
 
 }
+.tablee
+{
+    margin: auto 20px;
+    margin-top: 20px;
+}
