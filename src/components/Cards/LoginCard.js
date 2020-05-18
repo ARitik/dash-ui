@@ -11,6 +11,9 @@ const useStyles = makeStyles(CardStyle);
 export default function LoginCard() {
 	const classes = useStyles();
 	const [style, setStyle] = useState({});
+	const customMargin = {
+		margin: '30px 0',
+	};
 	setTimeout(() => {
 		const newStyle = {
 			opacity: '1',
@@ -28,13 +31,17 @@ export default function LoginCard() {
 				>
 					<form>
 						<Title>Login</Title>
-						<InputField
-							type="input"
-							id="username"
-							heading="Username"
-							placeholder="eg. Alex Grisham"
-						/>
-						<InputField type="password" id="password" heading="Password" />
+						<Box style={customMargin}>
+							<InputField
+								type="input"
+								id="username"
+								heading="Username"
+								placeholder="eg. Alex Grisham"
+							/>
+						</Box>
+						<Box style={customMargin}>
+							<InputField type="password" id="password" heading="Password" />
+						</Box>
 						<Box
 							display="flex"
 							justifyContent="center"
