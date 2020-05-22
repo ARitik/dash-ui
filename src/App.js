@@ -13,31 +13,22 @@ import ToEditCard from './components/Cards/ToEditCard';
 import InputField from './components/Form/InputField';
 import LoginCard from './components/Cards/LoginCard';
 import LoginPage from './layouts/LoginPage';
+import Table from './components/Table/Table';
+import HostelSelectionPage from './layouts/HostelSelectionPage';
 
 export default function App() {
 	return (
-		// <Grid container direction="column">
-		// 	<Grid item>
-		// 		<NavBar />
-		// 	</Grid>
-		// 	<Grid item container>
-		// 		<Grid item xs={false} sm={2}></Grid>
-		// 		<Grid item xs={12} sm={8}>
-		// 			<DangerButton>Deallocate</DangerButton>
-		// 			<PrimaryButton>Allocate</PrimaryButton>
-		// 			<ProgressBar done={50} />
-		// 			<ProgressBar done={90} />
-		// 			<Text>This is some text</Text>
-		// 			<Title>This is some title</Title>
-		// 			<RoomCard />
-		// 			<ToEditCard />
-		// 			<HostelCard />
-		// 			<InputField id="Testing" heading="Username" type="input" />
-		// 			<LoginCard />
-		// 		</Grid>
-		// 		<Grid item xs={false} sm={2}></Grid>
-		// 	</Grid>
-		// </Grid>
-		<LoginPage />
+		<Grid container direction="column" spacing={8}>
+			<Grid item>
+				<NavBar />
+			</Grid>
+			<Grid item container>
+				<Grid item xs={false} sm={2}></Grid>
+				<Grid item container xs={12} sm={8}>
+					<HostelSelectionPage />
+				</Grid>
+				<Grid item xs={false} sm={2}></Grid>
+			</Grid>
+		</Grid>
 	);
 }

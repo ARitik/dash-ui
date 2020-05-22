@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Card, CardMedia, CardContent, Box } from '@material-ui/core';
+import { Card, CardMedia, CardContent, Box, Grid } from '@material-ui/core';
 import { Text, Title } from '../Typography/index';
 import ProgressBar from '../ProgressBars/ProgressBar';
 import { makeStyles } from '@material-ui/core/styles';
@@ -7,7 +7,11 @@ import CardStyle from '../../assets/jss/CardStyle';
 
 const useStyles = makeStyles(CardStyle);
 
-export default function HostelCard() {
+export default function HostelCard({
+	hostelName,
+	hostelAddress,
+	hostelCapacity,
+}) {
 	const [style, setStyle] = useState({});
 	const classes = useStyles();
 	setTimeout(() => {
@@ -17,7 +21,7 @@ export default function HostelCard() {
 		setStyle(newStyle);
 	}, 200);
 	return (
-		<div>
+		<Grid item sm={12} md={4}>
 			<Card className={classes.cardStyle} style={style}>
 				<CardMedia image="/hostel.jpg" className={classes.imageStyles} />
 				<CardContent>
@@ -26,12 +30,12 @@ export default function HostelCard() {
 						justifyContent="space-between"
 						alignItems="center"
 					>
-						<Title>BA-473</Title>
-						<Text>Medchal</Text>
+						<Title>{hostelName}</Title>
+						<Text>{hostelAddress}</Text>
 					</Box>
-					<ProgressBar done={42} title={'Rooms'} />
+					<ProgressBar done={hostelCapacity} title={'Rooms'} />
 				</CardContent>
 			</Card>
-		</div>
+		</Grid>
 	);
 }
