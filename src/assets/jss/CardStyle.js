@@ -1,6 +1,6 @@
 const CardStyle = {
 	cardStyle: {
-		width: '350px',
+		minWidth: '300px',
 		backgroundColor: 'var(--bg)',
 		boxShadow: 'var(--shadow)',
 		borderRadius: 'var(--border-radius)',

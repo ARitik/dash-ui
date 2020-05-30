@@ -2,6 +2,7 @@ const buttonStyle = {
 	primaryButton: {
 		margin: '4px',
 		marginTop: '40px',
+		marginLeft: '30px',
 		textTransform: 'none',
 		backgroundColor: 'var(--primary)',
 		minWidth: '150px',
@@ -16,6 +17,8 @@ const buttonStyle = {
 	},
 	dangerButton: {
 		margin: '4px',
+		marginLeft: '30px',
+		marginTop: '40px',
 		textTransform: 'none',
 		marginTop: '40px',
 		backgroundColor: 'var(--danger)',

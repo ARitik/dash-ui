@@ -8,27 +8,15 @@ import Text from './components/Typography/Text';
 import Title from './components/Typography/Title';
 import HostelCard from './components/Cards/HostelCard';
 import RoomCard from './components/Cards/RoomCard';
-import RoomLayout from './layouts/RoomLayout';
+import RoomLayout from './pages/RoomLayout';
 import ToEditCard from './components/Cards/ToEditCard';
 import InputField from './components/Form/InputField';
 import LoginCard from './components/Cards/LoginCard';
-import LoginPage from './layouts/LoginPage';
+import LoginPage from './pages/LoginPage';
+import RegistrationPage from './pages/RegistrationPage';
 import Table from './components/Table/Table';
-import HostelSelectionPage from './layouts/HostelSelectionPage';
+import HostelSelectionPage from './pages/HostelSelectionPage';
 
 export default function App() {
-	return (
-		<Grid container direction="column" spacing={8}>
-			<Grid item>
-				<NavBar />
-			</Grid>
-			<Grid item container>
-				<Grid item xs={false} sm={2}></Grid>
-				<Grid item container xs={12} sm={8}>
-					<HostelSelectionPage />
-				</Grid>
-				<Grid item xs={false} sm={2}></Grid>
-			</Grid>
-		</Grid>
-	);
+	return <RegistrationPage />;
 }

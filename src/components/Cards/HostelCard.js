@@ -21,7 +21,7 @@ export default function HostelCard({
 		setStyle(newStyle);
 	}, 200);
 	return (
-		<Grid item sm={12} md={4}>
+		<Grid item xs={12} sm={12} md={4} lg={4}>
 			<Card className={classes.cardStyle} style={style}>
 				<CardMedia image="/hostel.jpg" className={classes.imageStyles} />
 				<CardContent>

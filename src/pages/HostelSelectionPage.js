@@ -1,11 +1,14 @@
 import React from 'react';
 import { Grid } from '@material-ui/core';
 import HostelCard from '../components/Cards/HostelCard';
-import { Text } from '../components/Typography/index';
+import { PrimaryButton } from '../components/Buttons/index';
 
 export default function HostelSelectionPage() {
 	return (
-		<Grid item container spacing={4}>
+		<Grid container item spacing={4} justify="center">
+			<Grid item xs={12}>
+				<PrimaryButton>Add more Hostels</PrimaryButton>
+			</Grid>
 			<HostelCard
 				hostelName="BA-143"
 				hostelAddress="Medchal"
@@ -21,7 +24,11 @@ export default function HostelSelectionPage() {
 				hostelAddress="Kompally"
 				hostelCapacity="12"
 			/>
-			<Text>Add more hostels</Text>
+			<HostelCard
+				hostelName="CZ-124"
+				hostelAddress="Kompally"
+				hostelCapacity="12"
+			/>
 		</Grid>
 	);
 }

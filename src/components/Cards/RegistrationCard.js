@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Card, CardMedia, Grid, Box } from '@material-ui/core';
+import { Card, CardMedia, Box } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import InputField from '../Form/InputField';
 import { PrimaryButton } from '../Buttons/index';
@@ -8,7 +8,7 @@ import { Title } from '../Typography/index';
 
 const useStyles = makeStyles(CardStyle);
 
-export default function LoginCard() {
+export default function RegistrationCard() {
 	const classes = useStyles();
 	const [style, setStyle] = useState({});
 	const customMargin = {
@@ -30,7 +30,7 @@ export default function LoginCard() {
 					justifyContent="center"
 				>
 					<form>
-						<Title>Login</Title>
+						<Title>Register</Title>
 						<Box style={customMargin}>
 							<InputField
 								type="input"
@@ -40,10 +40,23 @@ export default function LoginCard() {
 							/>
 						</Box>
 						<Box style={customMargin}>
+							<InputField
+								type="email"
+								id="email"
+								heading="Email"
+								placeholder="eg. alexgrisham@dash.com"
+							/>
+						</Box>
+						<Box style={customMargin}>
 							<InputField type="password" id="password" heading="Password" />
 						</Box>
-						<Box>
-							<PrimaryButton>Login</PrimaryButton>
+						<Box
+							display="flex"
+							justifyContent="center"
+							alignItems="center"
+							width="100%"
+						>
+							<PrimaryButton>Register</PrimaryButton>
 						</Box>
 					</form>
 				</Box>
